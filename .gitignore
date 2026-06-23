@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+
+# Build output
+dist/
+build/
+target/
+out/
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Uploads & temp files
+backend/uploads/
+uploads/
+
+# Database
+*.sqlite
+*.db
+
+# Misc
+*.swp
+*.swo
+*~

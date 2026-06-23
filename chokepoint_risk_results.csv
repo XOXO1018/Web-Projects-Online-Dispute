@@ -1,0 +1,9 @@
+﻿咽喉要道,所在国家/地区,年通过量 (百万吨),总风险贸易量 (百万吨),总经济成本 (百万美元),主要风险类型
+Suez Canal,Egypt,900,10.02,0.01,trade_at_risk_geopolitical_v
+Panama Canal,Panama,475,9.07,0.01,trade_at_risk_geopolitical_v
+Bosporus Strait,Turkey,150,2.44,0.0,trade_at_risk_geopolitical_v
+Bab el-Mandeb Strait,Djibouti/Yemen,200,9.34,0.01,trade_at_risk_geopolitical_v
+Strait of Hormuz,Iran/Oman,500,18.62,0.01,trade_at_risk_geopolitical_v
+Strait of Malacca,Malaysia/Indonesia,600,16.38,0.02,trade_at_risk_geopolitical_v
+Gibraltar Strait,UK/Spain,300,0.84,0.0,trade_at_risk_geopolitical_v
+Oresund Strait,Denmark/Sweden,50,0.04,0.0,trade_at_risk_geopolitical_v

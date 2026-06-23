@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>TestExample</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <!-- 统一指定JDK版本属性（可选，方便后续维护） -->
+    <properties>
+        <maven.compiler.source>24</maven.compiler.source>
+        <maven.compiler.target>24</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!-- MySQL驱动依赖（适配Java 24的最新兼容版本） -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version> <!-- 8.4.0是适配Java 24的稳定版本 -->
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 编译插件，指定JDK 24版本 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version> <!-- 升级插件版本以兼容Java 24 -->
+                <configuration>
+                    <source>24</source> <!-- 源码编译版本改为24 -->
+                    <target>24</target> <!-- 生成字节码版本改为24 -->
+                    <!-- 可选：开启Java 24的预览功能（如果用到） -->
+                    <!-- <compilerArgs>
+                        <arg>-enable-preview</arg>
+                    </compilerArgs> -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
